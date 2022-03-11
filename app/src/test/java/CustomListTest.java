@@ -31,10 +31,10 @@ public class CustomListTest {
 
     }
     @Test
-    void testDelete() {
+    public void testDelete() {
 
-        City city = new City("Edmonton", "Alberta");
-        list.add(city);
+        City city = new City("Halifax", "NS");
+        list.addCity(city);
         assertEquals(true, list.hasCity(city));
         list.delete(city);
         assertEquals(false, list.hasCity(city));
